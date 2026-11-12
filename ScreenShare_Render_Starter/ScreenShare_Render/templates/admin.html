@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>ScreenShare Admin</title>
+<style>
+body{margin:0;background:#101827;color:#eef2ff;font:15px Segoe UI,Arial;padding:32px}
+main{max-width:760px;margin:auto;background:#1b2738;padding:28px;border-radius:16px}
+input,button{padding:12px;border-radius:8px;border:1px solid #46556b;margin:5px 0;font-size:15px}
+input{width:min(100%,440px);box-sizing:border-box;background:#0e1725;color:white}
+button{background:#2563eb;color:white;border:0;cursor:pointer}button:disabled{opacity:.5}
+small,.muted{color:#b6c2d3}.row{display:flex;gap:10px;flex-wrap:wrap;align-items:center}
+#status{margin-top:18px;padding:12px;background:#111d2d;border-radius:8px;white-space:pre-wrap}
+</style></head>
+<body><main>
+<h1>ScreenShare Admin</h1>
+<p class="muted">Enter the pairing ID shown in the ScreenShare app on the computer whose owner you want to invite.</p>
+<label>Admin key<br><input id="key" type="password" autocomplete="current-password" placeholder="Render ADMIN_KEY"></label><br>
+<label>Device pairing ID<br><input id="device" maxlength="32" placeholder="32-character device ID"></label>
+<div class="row"><button id="request">Request permission</button><button id="clear">Clear</button></div>
+<div id="status">Not connected.</div>
+<p class="muted"><small>The remote user must approve the request, then explicitly choose a screen in their browser. This dashboard cannot access a screen without those actions.</small></p>
+</main><script src="/static/admin.js"></script></body></html>

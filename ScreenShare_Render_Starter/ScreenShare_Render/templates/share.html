@@ -1,0 +1,14 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>ScreenShare - Share</title><style>
+body{background:#101827;color:white;font:16px Segoe UI,Arial;text-align:center;padding:35px}
+main{max-width:760px;margin:auto;background:#1b2738;padding:28px;border-radius:16px}
+button{padding:13px 20px;border:0;border-radius:8px;background:#16a34a;color:white;font-size:16px;cursor:pointer}
+#stop{background:#dc2626}video{width:100%;background:#050505;margin-top:20px}
+#status{color:#b9c8dc}
+</style></head><body><main><h1>ScreenShare</h1>
+<h2>Screen sharing approval</h2>
+<p>You approved a request to view your screen. Choose a screen or window below when prompted by your browser.</p>
+<button id="start">Choose screen and start sharing</button> <button id="stop" disabled>Stop sharing</button>
+<p id="status">Not sharing. The viewer cannot see anything yet.</p>
+<video id="preview" autoplay muted playsinline></video>
+</main><script src="/static/share.js"></script></body></html>
